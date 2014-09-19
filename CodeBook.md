@@ -1,4 +1,5 @@
 Data:
+===========================
 
 Data for this project is located at the following link:
 
@@ -43,6 +44,7 @@ The following files are available for the train and test data. Their description
 It is important to note that this project and script has nothing to do with the intertial signals files.
 
 Variables:
+===========================
 
 According to the experiment documentation, for each record it is provided:
 
@@ -72,12 +74,13 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 gravityMean tBodyAccMean tBodyAccJerkMean tBodyGyroMean tBodyGyroJerkMean
 
 Transformations:
+===========================
 
 This script performs a series of transformations on the raw data that are documented in-line of the code. In general, this script:
 
-1) Checks to see if the required packages have been loaded, and if not, loads the necessary packages.
-2) Reads the data from the UCI HAR Dataset into R.
-3) Binds the comparable datasets together (using rbind and merge) and applies descriptive labels.
-4) Combines all the datasets together in a single dataframe.
-5) Extracts, via grep, all columns containing the search terms "mean" or "std." It is important to note that I made the decision to include the "meanFreq" readings as well because it is possible the assignement requires these readings as the objective is written and they are easily removed after-the-fact should they not be required.
+1) Checks to see if the required packages have been loaded, and if not, loads the necessary packages.<br>
+2) Reads the data from the UCI HAR Dataset into R.<br>
+3) Binds the comparable datasets together (using rbind and merge) and applies descriptive labels.<br>
+4) Combines all the datasets together in a single dataframe.<br>
+5) Extracts, via grep, all columns containing the search terms "mean" or "std." It is important to note that I made the decision to include the "meanFreq" readings as well because it is possible the assignement requires these readings as the objective is written and they are easily removed after-the-fact should they not be required.<br>
 6) Writes new table called "tidy_data.txt" to working directory.
