@@ -1,4 +1,4 @@
-getdatacourseproject
+Getting and Cleaning Data Course Project
 ====================
 
 This repository contains data and scripts to complete the course project for Coursera's "Getting and Cleaning Data" in partnership with Johns Hopkins University.
