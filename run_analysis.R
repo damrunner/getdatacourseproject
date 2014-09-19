@@ -45,7 +45,7 @@ run_analysis <- function() {
         melt <- melt(newData, id.var=c("subject","activity"))
         means <- dcast(melt, subject+activity~variable, mean)
         
-        # cleans environment and writes new table
+        # writes new table
         write.table(means, file="tidy_data.txt", row.name=FALSE)
         View(means)
 }
